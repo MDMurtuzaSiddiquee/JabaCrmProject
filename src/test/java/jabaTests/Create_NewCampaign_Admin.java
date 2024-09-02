@@ -471,10 +471,10 @@ public void NewCampaign() throws InterruptedException{
     
               }
               
-//              @AfterTest
-//          	public void Closer() {
-//          		driver.close();
-//          		log.debug("Browser got closed");
-//          	}
+              @AfterTest
+          	public void Closer() {
+          		driver.close();
+          		log.debug("Browser got closed");
+          	}
 
 }
