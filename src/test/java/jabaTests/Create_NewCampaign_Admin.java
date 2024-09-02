@@ -61,6 +61,9 @@ public class Create_NewCampaign_Admin extends Base{
 		log.debug("Browser got launched");
 		driver.get(prop.getProperty("mainUrl"));
 		log.debug("Navigated to application URL");
+		
+		
+//		I am
 	}
 	
 	@Test(priority = 1)
