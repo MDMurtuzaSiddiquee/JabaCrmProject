@@ -2,27 +2,31 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T18:21:53 IST" name="Default suite" finished-at="2024-09-02T18:22:34 IST" duration-ms="40775">
+  <suite started-at="2024-09-03T12:30:14 IST" name="Default suite" finished-at="2024-09-03T12:30:55 IST" duration-ms="40185">
     <groups>
     </groups>
-    <test started-at="2024-09-02T18:21:53 IST" name="Default test" finished-at="2024-09-02T18:22:34 IST" duration-ms="40775">
+    <test started-at="2024-09-03T12:30:14 IST" name="Default test" finished-at="2024-09-03T12:30:55 IST" duration-ms="40185">
       <class name="jabaTests.Create_NewCampaign_Admin">
-        <test-method is-config="true" signature="OpenApplication()[pri:0, instance:jabaTests.Create_NewCampaign_Admin@2362f559]" started-at="2024-09-02T18:21:53 IST" name="OpenApplication" finished-at="2024-09-02T18:22:00 IST" duration-ms="6490" status="PASS">
+        <test-method is-config="true" signature="OpenApplication()[pri:0, instance:jabaTests.Create_NewCampaign_Admin@4c178a76]" started-at="2024-09-03T12:30:14 IST" name="OpenApplication" finished-at="2024-09-03T12:30:21 IST" duration-ms="6499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApplication -->
-        <test-method signature="login_Admin()[pri:1, instance:jabaTests.Create_NewCampaign_Admin@2362f559]" started-at="2024-09-02T18:22:00 IST" name="login_Admin" finished-at="2024-09-02T18:22:04 IST" duration-ms="4719" status="PASS">
+        <test-method signature="login_Admin()[pri:1, instance:jabaTests.Create_NewCampaign_Admin@4c178a76]" started-at="2024-09-03T12:30:21 IST" name="login_Admin" finished-at="2024-09-03T12:30:26 IST" duration-ms="4843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Admin -->
-        <test-method signature="NewCampaign()[pri:2, instance:jabaTests.Create_NewCampaign_Admin@2362f559]" started-at="2024-09-02T18:22:04 IST" name="NewCampaign" finished-at="2024-09-02T18:22:21 IST" duration-ms="16566" status="PASS">
+        <test-method signature="NewCampaign()[pri:2, instance:jabaTests.Create_NewCampaign_Admin@4c178a76]" started-at="2024-09-03T12:30:26 IST" name="NewCampaign" finished-at="2024-09-03T12:30:42 IST" duration-ms="15963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewCampaign -->
-        <test-method signature="addCampAthlete()[pri:3, instance:jabaTests.Create_NewCampaign_Admin@2362f559]" started-at="2024-09-02T18:22:21 IST" name="addCampAthlete" finished-at="2024-09-02T18:22:34 IST" duration-ms="12956" status="PASS">
+        <test-method signature="addCampAthlete()[pri:3, instance:jabaTests.Create_NewCampaign_Admin@4c178a76]" started-at="2024-09-03T12:30:42 IST" name="addCampAthlete" finished-at="2024-09-03T12:30:54 IST" duration-ms="12679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCampAthlete -->
+        <test-method is-config="true" signature="Closer()[pri:0, instance:jabaTests.Create_NewCampaign_Admin@4c178a76]" started-at="2024-09-03T12:30:54 IST" name="Closer" finished-at="2024-09-03T12:30:55 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closer -->
       </class> <!-- jabaTests.Create_NewCampaign_Admin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

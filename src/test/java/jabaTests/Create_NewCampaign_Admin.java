@@ -45,8 +45,7 @@ public class Create_NewCampaign_Admin extends Base{
 	WebElement athleteSport;
 	WebElement athleteCancelButton;
 	WebElement camptext;
-	Set<String> keys;
-	String[] keyArray;
+
 
 	
 	
@@ -63,7 +62,7 @@ public class Create_NewCampaign_Admin extends Base{
 		log.debug("Navigated to application URL");
 		
 		
-//		I am
+
 	}
 	
 	@Test(priority = 1)
@@ -161,10 +160,10 @@ public void NewCampaign() throws InterruptedException{
 	
 	
 	// Get the set of property names (keys)
-    keys = prop.stringPropertyNames();
+	Set<String> keys = prop.stringPropertyNames();
     
     // Convert Set to an array for indexed access
-    keyArray = keys.toArray(new String[0]);
+    String[] keyArray = keys.toArray(new String[0]);
     
     
     List<String> filterAddTask = new ArrayList<>();
@@ -177,23 +176,19 @@ public void NewCampaign() throws InterruptedException{
     for (String word : keyArray) {
         if (word.contains("addNewTask")) {
             filterAddTask.add(word);
-            log.debug("Task name got added");
+           
         }
         if (word.contains("taskDate")) {
         	filterDate.add(word);
-        	log.debug("Task date got added");
+        	
         }
         
         if (word.contains("platform")) {
         	filterPlatform.add(word);
-        	log.debug("Task platform got added");
+        	
         }
         if (word.contains("socialMedia")) {
         	filterSocialMedia.add(word);
-        	log.debug("Task Social Media platform got added");
-        	
-        }else {
-        	log.debug("error in the add task");
         }
            
     }
@@ -341,28 +336,52 @@ public void NewCampaign() throws InterruptedException{
 
             	
 //            	Thread.sleep(2000);
+            	
+            	
+            	
+            	// Get the set of property names (keys)
+            	Set<String> allkeys = prop.stringPropertyNames();
+                
+                // Convert Set to an array for indexed access
+//                String[] allkeyArray = allkeys.toArray(new String[0]);
 
                 // Convert Set to an array for indexed access
-
                 List<String> filterAthletelist = new ArrayList<>();
                 List<String> filterSportlist = new ArrayList<>();
                 
                 
-                for (String words : keyArray) {
+                
+                
+                // Loop through the array and filter strings containing
+                for (String words : allkeys) {
                     if (words.contains("AddAthleteName")) {
                     	filterAthletelist.add(words);
-                        log.debug("Task name got added");
                     }
                     if (words.contains("AthleteSport")) {
                     	filterSportlist.add(words);
-                    	log.debug("Task date got added");
                     }
-                    
-                  else {
-                    	log.debug("error in the add at");
-                    }
+               
                        
                 }
+                
+                
+//                for (String words : allkeyArray) {
+//                    if (words.contains("AddAthleteName")) {
+//                    	filterAthletelist.add(words);
+//                        log.debug("Task name got added");
+//                    }else {
+//                    	log.debug("error in the 1");
+//                    }
+//                    if (words.contains("AthleteSport")) {
+//                    	filterSportlist.add(words);
+//                    	log.debug("Task date got added");
+//                    }else {
+//                    	log.debug("error in the add 2");
+//                    }
+//                    
+//                
+//                       
+//                }
 
                 // Convert List back to Array if needed
                 String[] athleteArray = filterAthletelist.toArray(new String[0]);
@@ -375,8 +394,49 @@ public void NewCampaign() throws InterruptedException{
             	String prFootball = prop.getProperty("AthleteSport1");
             	
             	WebElement volleyballLocation = campAthlete.optionvolleyball();
-
             	String prVolleyball = prop.getProperty("AthleteSport2");
+
+                WebElement bowlingLocation = campAthlete.optionBowling();
+            	String prbowling = prop.getProperty("AthleteSport3");
+            	
+            	WebElement hockeyLocation = campAthlete.optionHockey();
+            	String prHockey = prop.getProperty("AthleteSport4");
+            	
+
+                WebElement rifleLocation = campAthlete.optionRifle();
+            	String prRifle = prop.getProperty("AthleteSport5");
+            	
+            	WebElement baseballLocation = campAthlete.optionBaseball();
+            	String prBaseball = prop.getProperty("AthleteSport6");
+            	
+
+                WebElement tennisLocation = campAthlete.optionTennis();
+            	String prTennis = prop.getProperty("AthleteSport7");
+            	
+            	WebElement soccerLocation = campAthlete.optionSoccer();
+            	String prSoccer = prop.getProperty("AthleteSport8");
+
+                WebElement trackFieldLocation = campAthlete.optionTrackField();
+            	String prTrackField = prop.getProperty("AthleteSport9");
+            	
+            	WebElement tableTennisLocation = campAthlete.optionTableTennis();
+            	String prTableTennis = prop.getProperty("AthleteSport10");
+            	
+
+                WebElement gymnasticsLocation = campAthlete.optionGymnastics();
+            	String prGymnastics = prop.getProperty("AthleteSport11");
+            	
+            	WebElement swimmingLocation = campAthlete.optionSwimming();
+            	String prSwimming = prop.getProperty("AthleteSport12");
+            	
+
+                WebElement golfLocation = campAthlete.optionGolf();
+            	String prGolf = prop.getProperty("AthleteSport13");
+            	
+            	WebElement rowingLocation = campAthlete.optionRowing();
+            	String prRowing = prop.getProperty("AthleteSport14");
+            	
+            	
             	
             	for(int i=0; i<athleteArray.length;i++) {
             		
@@ -390,6 +450,7 @@ public void NewCampaign() throws InterruptedException{
             	        // Enter Athlete name into the Search text field.
                     	campAthlete.athleteSearchTextField().sendKeys(prop.getProperty(athletekey));
                     	log.debug("Athlete Name got Entered");
+//                    	  String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
                     	
                     	//Click on Sport Drop Down
                     	campAthlete.sportDropDown().click();
@@ -405,7 +466,6 @@ public void NewCampaign() throws InterruptedException{
             				//Verify the Athlete
             				Assert.assertEquals(athleteNameSearched, athleteValur);
             				//Add the athlete
-            				action= new Actions(driver);
             				action.moveToElement(campAthlete.firstAthlete()).click().perform();
             				log.debug(athleteValur+"Athlete is Selected");
             				
@@ -413,7 +473,7 @@ public void NewCampaign() throws InterruptedException{
                     		
                     	}
                     	else if(sportValur==prVolleyball) {
-                    		
+//                    		action.moveToElement(volleyballLocation).click().perform();
                     		volleyballLocation.click();
                     		log.debug("option volleyball is selected");
                     		
@@ -422,12 +482,173 @@ public void NewCampaign() throws InterruptedException{
             				//Verify the Athlete
             				Assert.assertEquals(athleteNameSearched, athleteValur);
             				//Add the athlete
-            				action= new Actions(driver);
             				action.moveToElement(campAthlete.firstAthlete()).click().perform();
             				log.debug(athleteValur+"Athlete is Selected");
                     		
                     		
-                    	}else {
+                    	}else if(sportValur==prbowling) {
+                    		
+                    		bowlingLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+                    		
+                    		
+                    	}else if(sportValur==prHockey) {
+                    		
+                    		hockeyLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+                    		
+                    		
+                    	}else if(sportValur==prRifle) {
+                    		
+                    		rifleLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+                    		
+                    		
+                    	}else if(sportValur==prBaseball) {
+                    		
+                    		baseballLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+                    		
+                    		
+                    	}else if(sportValur==prTennis) {
+                    		
+                    		tennisLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prSoccer) {
+                    		
+                    		soccerLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prGymnastics) {
+                    		
+                    		gymnasticsLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prTrackField) {
+                    		
+                    		trackFieldLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prTableTennis) {
+                    		
+                    		tableTennisLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prSwimming) {
+                    		
+                    		swimmingLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prRowing) {
+                    		
+                    		rowingLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}else if(sportValur==prGolf) {
+                    		
+                    		golfLocation.click();
+                    		log.debug("option volleyball is selected");
+                    		
+                    		String athleteNameSearched = campAthlete.searchedAthleteNme().getText();
+            				log.debug("Searched Athlete Name is displayed");
+            				//Verify the Athlete
+            				Assert.assertEquals(athleteNameSearched, athleteValur);
+            				//Add the athlete
+            				action.moveToElement(campAthlete.firstAthlete()).click().perform();
+            				log.debug(athleteValur+"Athlete is Selected");
+
+                    	}
+                    	
+                    	else {
                     		System.out.println("Athlete not Added");
                     	}
             	}

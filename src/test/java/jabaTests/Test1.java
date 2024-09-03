@@ -45,7 +45,8 @@ public class Test1 extends Base{
         // Loop through the array and filter strings containing "a"
         for (String word : keyArray) {
             if (word.contains("addNewTask")) {
-                filterAddTask.add(word);
+                boolean a = filterAddTask.add(word);
+                System.out.println(a);
             }
             if (word.contains("taskDate")) {
             	filterDate.add(word);

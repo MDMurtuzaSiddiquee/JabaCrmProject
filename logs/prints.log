@@ -1,31 +1,73 @@
-18:22:30.161 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.164 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - Task date got added
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - Task date got added
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.168 [main] DEBUG jabaTests.To_Verify_Login_page - error in the add at
-18:22:30.337 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete Name got Entered
-18:22:30.598 [main] DEBUG jabaTests.To_Verify_Login_page - option football is selected
-18:22:30.614 [main] DEBUG jabaTests.To_Verify_Login_page - Searched Athlete Name is displayed
-18:22:30.797 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete is Selected
-18:22:30.965 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete Name got Entered
-18:22:31.172 [main] DEBUG jabaTests.To_Verify_Login_page - option volleyball is selected
-18:22:31.181 [main] DEBUG jabaTests.To_Verify_Login_page - Searched Athlete Name is displayed
-18:22:31.332 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete is Selected
-18:22:31.413 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete is Added in to the campaign
-18:22:31.435 [main] DEBUG jabaTests.To_Verify_Login_page - Generate Campaign Ideas page is displayed
-18:22:31.515 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete is Added into the campaign
-18:22:34.131 [main] DEBUG jabaTests.To_Verify_Login_page - Congratulations, the campaign has been created with the desired athletes
-18:22:34.481 [main] DEBUG jabaTests.To_Verify_Login_page - sendInviteMessage page is displayed
+12:30:17.777 [main] DEBUG jabaTests.To_Verify_Login_page - Browser got launched
+12:30:21.403 [main] DEBUG jabaTests.To_Verify_Login_page - Navigated to application URL
+12:30:21.617 [main] DEBUG jabaTests.To_Verify_Login_page - AdminEmail addressed got entered
+12:30:21.701 [main] DEBUG jabaTests.To_Verify_Login_page - AdminPassword addressed got entered
+12:30:21.794 [main] DEBUG jabaTests.To_Verify_Login_page - Clicked on Login Button
+12:30:26.173 [main] DEBUG jabaTests.To_Verify_Login_page - Campaign button is Displayed
+12:30:26.283 [main] DEBUG jabaTests.To_Verify_Login_page - click on the NewCampaign button
+12:30:26.970 [main] DEBUG jabaTests.To_Verify_Login_page - Jaba chat New Campaign page is displayed
+12:30:27.296 [main] DEBUG jabaTests.To_Verify_Login_page - BarandName got entered
+12:30:27.596 [main] DEBUG jabaTests.To_Verify_Login_page - CampaignName got entered
+12:30:27.702 [main] DEBUG jabaTests.To_Verify_Login_page - startDate got entered
+12:30:27.819 [main] DEBUG jabaTests.To_Verify_Login_page - endDate got entered
+12:30:27.921 [main] DEBUG jabaTests.To_Verify_Login_page - exclusivityWindow got entered
+12:30:28.000 [main] DEBUG jabaTests.To_Verify_Login_page - projectRate got entered
+12:30:28.197 [main] DEBUG jabaTests.To_Verify_Login_page - description got entered
+12:30:28.292 [main] DEBUG jabaTests.To_Verify_Login_page - addCategory clicked
+12:30:28.388 [main] DEBUG jabaTests.To_Verify_Login_page - addNewCategory got entered
+12:30:28.466 [main] DEBUG jabaTests.To_Verify_Login_page - addCategoryButton got clicked
+12:30:28.549 [main] DEBUG jabaTests.To_Verify_Login_page - AddTask clicked
+12:30:28.708 [main] DEBUG jabaTests.To_Verify_Login_page - addNewTask got entered
+12:30:29.399 [main] DEBUG jabaTests.To_Verify_Login_page - taskDate got entered
+12:30:29.728 [main] DEBUG jabaTests.To_Verify_Login_page - platform got selected
+12:30:30.073 [main] DEBUG jabaTests.To_Verify_Login_page - socialMedia got selected
+12:30:30.308 [main] DEBUG jabaTests.To_Verify_Login_page - task1 created
+12:30:30.400 [main] DEBUG jabaTests.To_Verify_Login_page - AddTask clicked
+12:30:30.555 [main] DEBUG jabaTests.To_Verify_Login_page - addNewTask got entered
+12:30:30.668 [main] DEBUG jabaTests.To_Verify_Login_page - taskDate got entered
+12:30:30.946 [main] DEBUG jabaTests.To_Verify_Login_page - platform got selected
+12:30:31.322 [main] DEBUG jabaTests.To_Verify_Login_page - socialMedia got selected
+12:30:31.492 [main] DEBUG jabaTests.To_Verify_Login_page - task1 created
+12:30:31.570 [main] DEBUG jabaTests.To_Verify_Login_page - AddTask clicked
+12:30:31.715 [main] DEBUG jabaTests.To_Verify_Login_page - addNewTask got entered
+12:30:31.840 [main] DEBUG jabaTests.To_Verify_Login_page - taskDate got entered
+12:30:32.113 [main] DEBUG jabaTests.To_Verify_Login_page - platform got selected
+12:30:32.281 [main] DEBUG jabaTests.To_Verify_Login_page - task1 created
+12:30:32.363 [main] DEBUG jabaTests.To_Verify_Login_page - AddTask clicked
+12:30:32.578 [main] DEBUG jabaTests.To_Verify_Login_page - addNewTask got entered
+12:30:32.692 [main] DEBUG jabaTests.To_Verify_Login_page - taskDate got entered
+12:30:32.965 [main] DEBUG jabaTests.To_Verify_Login_page - platform got selected
+12:30:33.242 [main] DEBUG jabaTests.To_Verify_Login_page - socialMedia got selected
+12:30:33.436 [main] DEBUG jabaTests.To_Verify_Login_page - task1 created
+12:30:33.503 [main] DEBUG jabaTests.To_Verify_Login_page - AddTask clicked
+12:30:33.636 [main] DEBUG jabaTests.To_Verify_Login_page - addNewTask got entered
+12:30:33.768 [main] DEBUG jabaTests.To_Verify_Login_page - taskDate got entered
+12:30:34.046 [main] DEBUG jabaTests.To_Verify_Login_page - platform got selected
+12:30:34.184 [main] DEBUG jabaTests.To_Verify_Login_page - task1 created
+12:30:34.269 [main] DEBUG jabaTests.To_Verify_Login_page - AddTask clicked
+12:30:34.418 [main] DEBUG jabaTests.To_Verify_Login_page - addNewTask got entered
+12:30:34.545 [main] DEBUG jabaTests.To_Verify_Login_page - taskDate got entered
+12:30:34.772 [main] DEBUG jabaTests.To_Verify_Login_page - platform got selected
+12:30:34.999 [main] DEBUG jabaTests.To_Verify_Login_page - socialMedia got selected
+12:30:35.193 [main] DEBUG jabaTests.To_Verify_Login_page - task1 created
+12:30:35.397 [main] DEBUG jabaTests.To_Verify_Login_page - requirement got entered
+12:30:35.480 [main] DEBUG jabaTests.To_Verify_Login_page - requirement created
+12:30:35.602 [main] DEBUG jabaTests.To_Verify_Login_page - preview got clicked
+12:30:40.016 [main] DEBUG jabaTests.To_Verify_Login_page - preview got clicked
+12:30:42.262 [main] DEBUG jabaTests.To_Verify_Login_page - looksgood got clicked
+12:30:47.263 [main] DEBUG jabaTests.To_Verify_Login_page - Campaign is created
+12:30:50.474 [main] DEBUG jabaTests.To_Verify_Login_page - Add Athlete is Clicked
+12:30:50.670 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete Name got Entered
+12:30:50.891 [main] DEBUG jabaTests.To_Verify_Login_page - option football is selected
+12:30:50.915 [main] DEBUG jabaTests.To_Verify_Login_page - Searched Athlete Name is displayed
+12:30:51.079 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete1 TestAthlete is Selected
+12:30:51.361 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete Name got Entered
+12:30:51.505 [main] DEBUG jabaTests.To_Verify_Login_page - option volleyball is selected
+12:30:51.537 [main] DEBUG jabaTests.To_Verify_Login_page - Searched Athlete Name is displayed
+12:30:51.701 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete2 TestAthlete is Selected
+12:30:51.821 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete is Added in to the campaign
+12:30:51.846 [main] DEBUG jabaTests.To_Verify_Login_page - Generate Campaign Ideas page is displayed
+12:30:51.962 [main] DEBUG jabaTests.To_Verify_Login_page - Athlete is Added into the campaign
+12:30:54.569 [main] DEBUG jabaTests.To_Verify_Login_page - Congratulations, the campaign has been created with the desired athletes
+12:30:54.945 [main] DEBUG jabaTests.To_Verify_Login_page - sendInviteMessage page is displayed
+12:30:55.077 [main] DEBUG jabaTests.To_Verify_Login_page - Browser got closed
